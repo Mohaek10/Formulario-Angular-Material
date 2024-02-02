@@ -1,0 +1,14 @@
+<h1 mat-dialog-title> Datos enviados: </h1>
+<div mat-dialog-content>
+  <p>Nombre: {{data.nombre}}</p>
+  <p>Direccion: {{data.direccion}} </p>
+  <p>Correo: {{data.email}}</p>
+  <p>Telefono: {{data.telefono}}</p>
+  <p>Clases: {{data.clases}}</p>
+  <p>Sexo: {{data.sexo}}</p>
+</div>
+
+<div mat-dialog-actions >
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
